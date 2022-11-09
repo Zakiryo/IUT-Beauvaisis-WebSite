@@ -1,0 +1,160 @@
+/* Blocs */
+
+.imgCarte {
+    width: 500px;
+    float: right;
+    padding: 10px;
+}
+
+.Welcome {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 10px;
+    border: solid white;
+}
+
+/* Slider */
+
+.slider {
+    width: 800px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.slider-viewport {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+}
+
+.slider-content img {
+    width: 800px;
+    height: 400px;
+}
+
+.slider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slider-nav a {
+    -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    background-color: #adafbc;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+}
+
+.slider-nav a:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+}
+
+#img2:target .slider-content {
+    -webkit-transform: translateX(-800px);
+    transform: translateX(-800px);
+}
+
+#img3:target .slider-content {
+    -webkit-transform: translateX(-1600px);
+    transform: translateX(-1600px);
+}
+
+#img4:target .slider-content {
+    -webkit-transform: translateX(-2400px);
+    transform: translateX(-2400px);
+}
+
+#img5:target .slider-content {
+    -webkit-transform: translateX(-3200px);
+    transform: translateX(-3200px);
+}
+
+@media screen and (max-width: 1500px) {
+    .Welcome {
+        width: 1100px;
+    }
+
+    .slider-viewport {
+        width: 1100px;
+    }
+
+    .slider {
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .Welcome {
+        width: 800px;
+    }
+
+    .slider-viewport {
+        width: 800px;
+    }
+
+    .slider {
+        width: 800px;
+    }
+}
+
+/* Reponsive */
+
+@media screen and (max-width: 950px) {
+    .Welcome {
+        width: 600px;
+    }
+
+    .slider-viewport {
+        width: 600px;
+    }
+
+    .slider {
+        width: 600px;
+    }
+
+    .imgCarte {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Welcome {
+        width: 350px;
+    }
+
+    .slider-viewport {
+        width: 350px;
+    }
+
+    .slider {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Welcome {
+        width: 320px;
+    }
+
+    .slider-viewport {
+        width: 320px;
+    }
+
+    .slider {
+        width: 320px;
+    }
+}
