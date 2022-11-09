@@ -1,0 +1,49 @@
+
+table {
+    display: grid;
+    border-collapse: collapse;
+    grid-template-columns:
+    minmax(200px, 1.20fr)
+    minmax(200px, 1.20fr)
+    minmax(200px, 1.20fr)
+    minmax(260px, 1.20fr)
+    minmax(200px, 1.20fr)
+    minmax(150px, 1.20fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(11, 12, 23, 0.53);
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #6c7ae0;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+}
+
+th:last-child {
+    border: 0;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
