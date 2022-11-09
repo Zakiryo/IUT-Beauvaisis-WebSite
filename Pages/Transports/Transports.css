@@ -1,0 +1,99 @@
+/*Page Transports ----------------------------------------------------------------------------------------------------*/
+body {
+    font-size: 23px;
+}
+
+#Transports1 {
+    animation: transitionImg 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 10px;
+    border: solid white;
+}
+
+#Transports2 {
+    animation: transitionImg 1s;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 10px;
+    border: solid white;
+}
+
+#Transports3 {
+    animation: transitionImg 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 10px;
+    border: solid white;
+}
+
+.imgBus {
+    width: 650px;
+    float: left;
+    padding: 20px;
+}
+
+@keyframes transitionImg {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .imgBus {
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    #Transports1 {
+        flex-direction: column;
+    }
+
+    #Transports2 {
+        flex-direction: column;
+    }
+
+    #Transports3 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #Transports1 {
+        font-size: 85%;
+    }
+
+    #Transports2 {
+        font-size: 85%;
+    }
+
+    #Transports3 {
+        font-size: 85%;
+    }
+
+    .imgBus {
+        width: 250px;
+        height: 150px;
+    }
+}
