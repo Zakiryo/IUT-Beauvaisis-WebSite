@@ -1,0 +1,105 @@
+/*Page Transports ----------------------------------------------------------------------------------------------------*/
+.Tourisme1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 10px;
+    border: solid white;
+
+}
+
+.Tourisme2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 10px;
+    border: solid white;
+}
+
+.titre1 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.titre2 {
+    font-size: 35px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+#logoCorolis {
+    width: 500px;
+    float: right;
+}
+
+.imgMSL {
+    animation: transitionImg 1s;
+    width: 650px;
+    float: left;
+    padding: 20px;
+}
+
+.imgEAB {
+    animation: transitionImg 1s;
+    width: 650px;
+    float: left;
+    padding: 20px;
+}
+
+.map {
+    padding-top: 20px;
+    width: 500px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+#hor {
+    text-align: center;
+
+}
+
+@keyframes transitionImg {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .Tourisme1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Tourisme2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .imgMSL {
+        width: 100%;
+    }
+
+    .imgEAB {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+}
